@@ -124,7 +124,7 @@
     if (gr.state == UIGestureRecognizerStateCancelled ||
         gr.state == UIGestureRecognizerStateEnded) {
 
-        if (abs(p.x) < _dragThreshold) {
+        if (fabs(p.x) < _dragThreshold) {
             [self setOn: _on animated: YES];
             
         } else {
